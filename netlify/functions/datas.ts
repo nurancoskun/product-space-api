@@ -59,10 +59,10 @@ export const handler: Handler = async (event) => {
     // Absolute fetch to avoid Node relative URL issues
     // origin’i güvenli şekilde çıkar (Netlify’da en sağlam yöntem)
 const origin = (() => {
-  try { return new URL(event.rawUrl!).origin; } catch { /* no-op */ }
+  try { return new URL(event.rawUrl!).origin; } catch {}
   const proto = (event.headers["x-forwarded-proto"] as string) || "https";
   const host  = (event.headers["host"] as string) || "";
-  return host ? `${proto}://${host}` : "http://127.0.0.1:8888"; // local fallback
+  return host ? `${proto}://${host}` : "http://127.0.0.1:8888";
 })();
 
 const getText = async (fileRel: string) => {
