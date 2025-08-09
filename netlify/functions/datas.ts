@@ -1,130 +1,201 @@
-
 import type { Handler } from "@netlify/functions";
 
-type Item = { path: string; meta: any };
-let CACHE: Item[] | null = null;
+type ManifestEntry = { file: string; root?: string; cityKeys?: string[] };
+type Manifest = Record<string, ManifestEntry>;
 
-async function loadIndex(): Promise<Item[]> {
-  if (CACHE) return CACHE;
-  const r = await fetch(`/.netlify/functions/static?file=repo/index.json`);
-  if (!r.ok) throw new Error("index not found");
-  CACHE = await r.json();
-  return CACHE!;
-}
+const ok = (b: string, t = "application/json") => ({
+  statusCode: 200,
+  headers: { "Content-Type": t, "Cache-Control": "public, max-age=600" },
+  body: b,
+});
+const nf = (m: string) => ({ statusCode: 404, body: m });
+const bad = (m: string) => ({ statusCode: 400, body: m });
 
-function mapStatus(s: string) {
-  const k = s.toLowerCase();
-  if (k === "curst" || k === "currentstatus") return {abbr: "CurSt", full: "currentStatus"};
-  if (k === "ecst" || k === "economicstructure") return {abbr: "EcSt", full: "economicStructure"};
-  return null;
-}
-
-function normalizeCity(s: string) {
-  return s
+const norm = (s: string) =>
+  s
     .toLowerCase()
-    .replace(/ı/g, "i").replace(/İ/g, "i")
-    .replace(/ş/g, "s").replace(/ğ/g, "g")
-    .replace(/ü/g, "u").replace(/ö/g, "o")
+    .replace(/ı/g, "i")
+    .replace(/İ/g, "i")
+    .replace(/ş/g, "s")
+    .replace(/ğ/g, "g")
+    .replace(/ü/g, "u")
+    .replace(/ö/g, "o")
     .replace(/ç/g, "c")
     .trim();
-}
 
-function filterByCity(payload: any, cityname: string) {
-  const want = normalizeCity(cityname);
-  if (Array.isArray(payload)) {
-    const filtered = payload.filter((row) => {
-      const c = (row && (row.city ?? row.City ?? row.cityname ?? row.CityName ?? row.il ?? row.IL));
-      return c && normalizeCity(String(c)) === want;
-    });
-    return filtered.length ? filtered : null;
-  }
+const cityParam = (e: any) => {
+  const p = e.queryStringParameters || {};
+  const v = p.cityname || p.city || p.il;
+  return typeof v === "string" ? v.trim() : "";
+};
+
+const isAll = (v?: string) => !!v && norm(v) === "all";
+
+const at = (o: any, p?: string) =>
+  !p ? o : p.split(".").reduce((a: any, k: string) => (a && typeof a === "object" ? a[k] : undefined), o);
+
+function filterByCity(payload: any, c: string, keys?: string[]) {
+  const want = norm(c);
+  const K = keys && keys.length ? keys : ["il", "city", "cityname", "City", "CityName", "IL"];
+  const hit = (row: any) => {
+    for (const k of K) {
+      if (row && row[k] && norm(String(row[k])) === want) return true;
+    }
+    return false;
+  };
+  if (Array.isArray(payload)) return payload.filter(hit);
   if (payload && typeof payload === "object") {
-    const singleCity = (payload.city ?? payload.City ?? payload.cityname ?? payload.CityName ?? payload.il ?? payload.IL);
-    if (singleCity && normalizeCity(String(singleCity)) === want) return payload;
-    const key = Object.keys(payload).find(k => normalizeCity(k) === want);
+    if (hit(payload)) return payload;
+    const key = Object.keys(payload).find((k) => norm(k) === want);
     if (key) return (payload as any)[key];
   }
   return null;
 }
 
-const ok = (body:string, type="application/json") => ({
-  statusCode: 200,
-  headers: { "Content-Type": type, "Cache-Control": "public, max-age=600" },
-  body
-});
-const notFound = (msg:string)=>({ statusCode:404, body:msg });
-const bad = (msg:string)=>({ statusCode:400, body:msg });
-
 export const handler: Handler = async (event) => {
   try {
-    const p = event.path.replace(/^.*\/datas\//,""); // after /datas/
-    const seg = p.split("/").filter(Boolean);
+    const seg = event.path.replace(/^.*\/datas\//, "").split("/").filter(Boolean);
 
-    const cityParam =
-      event.queryStringParameters?.cityname ||
-      event.queryStringParameters?.city ||
-      event.queryStringParameters?.il;
+    // Absolute fetch to avoid Node relative URL issues
+    const proto = (event.headers["x-forwarded-proto"] as string) || "https";
+    const host = event.headers["host"] as string;
+    const base = `${proto}://${host}`;
+    const getText = async (fileRel: string) => {
+      const r = await fetch(`${base}/.netlify/functions/static?file=${encodeURIComponent(fileRel)}`);
+      if (!r.ok) return null;
+      return await r.text();
+    };
 
+    // Passthrough mode
     if (seg[0] === "source") {
       const file = seg.slice(1).join("/") + ".json";
-      const url = `/.netlify/functions/static?file=repo/source/${file}`;
-      const r = await fetch(url);
-      if (!r.ok) return notFound("source file not found");
-      const fileText = await r.text();
-
-      if (cityParam) {
-        try {
-          const obj = JSON.parse(fileText);
-          const sliced = filterByCity(obj, cityParam);
-          if (!sliced) return notFound(`city not found: ${cityParam}`);
-          return ok(JSON.stringify(sliced));
-        } catch {
-          return ok(fileText);
-        }
+      const txt = await getText(`repo/source/${file}`);
+      if (!txt) return nf("source file not found");
+      const cp = cityParam(event);
+      if (!cp || isAll(cp)) return ok(txt);
+      try {
+        const obj = JSON.parse(txt);
+        const sliced = filterByCity(obj, cp);
+        if (!sliced) return nf(`city not found: ${cp}`);
+        return ok(JSON.stringify(sliced));
+      } catch {
+        return ok(txt);
       }
-      return ok(fileText);
     }
 
-    if (seg[0] === "byMeta") {
-      const [_, status, topic, digit, year, viz, measureOpt] = seg;
-      const stat = mapStatus(status);
-      if (!stat) return bad("invalid status");
-      const measure = (measureOpt || "value").toLowerCase();
+    // v1 API
+    if (seg[0] === "v1") {
+      const [_, section, topic, digit, year, viz] = seg;
 
-      const idx = await loadIndex();
-      const candidates = idx.filter(it => {
-        const m = it.meta || {};
-        return m.status && (m.status.toLowerCase() === stat.abbr.toLowerCase()) &&
-               m.topic && (m.topic.toLowerCase() === topic.toLowerCase()) &&
-               m.digit && (m.digit.toLowerCase() === digit.toLowerCase()) &&
-               m.year && (String(m.year) === String(year)) &&
-               m.viz && (m.viz.toLowerCase() === viz.toLowerCase()) &&
-               m.measure && (m.measure.toLowerCase() === measure);
-      });
-
-      const chosen = candidates.length ? candidates[0] : null;
-      if (!chosen) return notFound("no match in index");
-
-      const url = `/.netlify/functions/static?file=repo/source/${chosen.path}`;
-      const r = await fetch(url);
-      if (!r.ok) return notFound("file not found");
-      const fileText = await r.text();
-
-      if (cityParam) {
-        try {
-          const obj = JSON.parse(fileText);
-          const sliced = filterByCity(obj, cityParam);
-          if (!sliced) return notFound(`city not found: ${cityParam}`);
-          return ok(JSON.stringify(sliced));
-        } catch {
-          return ok(fileText);
-        }
+      const maniTxt = await getText(`repo/${section}/manifest.json`);
+      if (!maniTxt) return nf(`manifest not found for ${section}`);
+      let mani: Manifest;
+      try {
+        mani = JSON.parse(maniTxt) as Manifest;
+      } catch {
+        return bad("invalid manifest");
       }
-      return ok(fileText);
+
+      const cp = cityParam(event);
+      const allCities = isAll(cp);
+      const key = `${section}:${viz}:${topic}:${digit}:${year}`;
+
+      // YEAR = ALL logic
+      if (norm(year) === "all") {
+        // First: check direct all file
+        const directAllKey = `${section}:${viz}:${topic}:${digit}:all`;
+        const directAllEntry = mani[directAllKey];
+        if (directAllEntry?.file) {
+          const txt = await getText(directAllEntry.file);
+          if (!txt) return nf("file not found (year=all)");
+          if (!cp || allCities) return ok(txt);
+          try {
+            const full = JSON.parse(txt);
+            let data = at(full, directAllEntry.root);
+            if (data === undefined) data = full;
+            const sliced = filterByCity(data, cp, directAllEntry.cityKeys);
+            if (!sliced) return nf(`city not found: ${cp}`);
+            return ok(JSON.stringify(sliced));
+          } catch {
+            return ok(txt);
+          }
+        }
+
+        // Aggregate years if direct all not found
+        const prefix = `${section}:${viz}:${topic}:${digit}:`;
+        const entries = Object.entries(mani)
+          .filter(([k]) => k.startsWith(prefix) && !k.endsWith(":all"))
+          .map(([k, v]) => ({ year: k.slice(prefix.length), entry: v as ManifestEntry }))
+          .sort((a, b) => (parseInt(a.year) || 0) - (parseInt(b.year) || 0));
+
+        if (!entries.length) return nf("no years matched in manifest");
+
+        const chunks: Array<{ year: string; data: any }> = [];
+        for (const e of entries) {
+          const txt = await getText(e.entry.file);
+          if (!txt) continue;
+          try {
+            const full = JSON.parse(txt);
+            let data = at(full, e.entry.root);
+            if (data === undefined) data = full;
+            if (cp && !allCities) {
+              const sliced = filterByCity(data, cp, e.entry.cityKeys);
+              if (!sliced) continue;
+              data = sliced;
+            }
+            chunks.push({ year: e.year, data });
+          } catch {}
+        }
+
+        if (!chunks.length) return nf("no data matched for year=all");
+
+        const allArr = chunks.every((c) => Array.isArray(c.data));
+        const allObj = chunks.every((c) => c.data && typeof c.data === "object" && !Array.isArray(c.data));
+
+        if (allArr) {
+          const out: any[] = [];
+          for (const c of chunks) {
+            for (const r of c.data as any[]) {
+              out.push(r && typeof r === "object" && !("year" in r) ? { ...r, year: c.year } : r);
+            }
+          }
+          return ok(JSON.stringify(out));
+        }
+
+        if (allObj) {
+          const out: Record<string, any> = {};
+          for (const c of chunks) {
+            for (const k of Object.keys(c.data)) {
+              if (!out[k]) out[k] = c.data[k];
+              else out[`${k}_${c.year}`] = c.data[k];
+            }
+          }
+          return ok(JSON.stringify(out));
+        }
+
+        return ok(JSON.stringify(chunks.map((c) => ({ year: c.year, value: c.data }))));
+      }
+
+      // Single year
+      const entry = mani[key];
+      if (!entry?.file) return nf(`manifest miss: ${key}`);
+      const txt = await getText(entry.file);
+      if (!txt) return nf("file not found");
+      if (!cp || allCities) return ok(txt);
+      try {
+        const full = JSON.parse(txt);
+        let data = at(full, entry.root);
+        if (data === undefined) data = full;
+        const sliced = filterByCity(data, cp, entry.cityKeys);
+        if (!sliced) return nf(`city not found: ${cp}`);
+        return ok(JSON.stringify(sliced));
+      } catch {
+        return ok(txt);
+      }
     }
 
-    return bad("unknown path. Try /datas/source/... or /datas/byMeta/{status}/{topic}/{digit}/{year}/{viz}/{measure?}");
-  } catch (e:any) {
+    return bad("unknown path. Try /datas/source/... or /datas/v1/:section/:topic/:digit/:year/:viz");
+  } catch (e: any) {
     return { statusCode: 500, body: String(e) };
   }
 };

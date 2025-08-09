@@ -1,0 +1,56 @@
+section: CrSt
+topic: employment-all, workplace-all, production-all, export-unit, export-value
+digit: 4digit, 6digit
+year: 2020, 2021, 2022, 2023, 2024, all
+viz:CrSt
+cityname-tr: Ankara,İstanbul, …, all
+Manifest anahtarı → CrSt:CrSt:<topic>:<digit>:<year>
+
+section: EcSt
+viz:pie
+topic: employment, workplace, exportTUIK, importTUIK
+digit: main, sub, 2digit, 4digit
+year: 2020, 2021, 2022, 2023, 2024, all
+cityname-tr: Ankara,İstanbul, …, all
+Manifest anahtarı → EcSt:pie:<topic>:<digit>:<year>
+
+section: EcSt
+viz:timeline
+topic: employment, workplace, exportTUIK, importTUIK
+digit: main, sub, 2digit, 4digit
+cityname-tr: Ankara,İstanbul, …, all
+Manifest anahtarı → EcSt:timeline:<topic>:<digit>:all
+
+
+section: EcSt
+viz: heatmap
+topic: employment, workplace, exportTUIK, importTUIK
+year: 2020, 2021, 2022, 2023, 2024, all
+cityname-tr: Ankara,İstanbul, …, all
+Manifest anahtarı → EcSt:heatmap:<topic>:<digit>:<year>
+
+section: StSp
+topic: employment, workplace, production, export-unit, export-value
+digit: 4digit, 6digit
+year: 2020, 2021, 2022, 2023, 2024, all
+viz: StSp
+cityname-tr: Ankara,İstanbul, …, all
+Manifest anahtarı → StSp:StSp:<topic>:<digit>:<year>
+
+
+section: PrSp
+viz: PrSpaceNACE, PrSpaceGTIP, PrSpaceGTIPWorld
+topic: 4digit, 6digit
+digit: 4digit, 6digit
+year: 2020, 2021, 2022, 2023, 2024, all
+cityname-tr: Ankara,İstanbul, …, all
+Manifest anahtarı → PrSp:<viz>:<topic>:<digit>:<year>
+
+
+section: Latent
+viz: Latent1, Latent2, Latent3, Latent4 
+topic: employment, workplace, production, export-unit, export-value, gtip, nace
+digit: 4digit, 6digit
+year: 2020, 2021, 2022, 2023, 2024, all
+cityname-tr: Ankara,İstanbul, …, all
+Manifest anahtarı → Latent:<viz>:<topic>:<digit>:<year>
