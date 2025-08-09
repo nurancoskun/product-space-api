@@ -1,0 +1,11 @@
+{
+  "EcSt:heatmap:workplace:6digit:2023": {
+    "file": "repo/source/EcSt/heatmap/workplace/6digit/2023/data.json"
+  },
+  "EcSt:pie:employment:4digit:2022": {
+    "file": "repo/source/EcSt/pie/employment/4digit/2022/data.json"
+  },
+  "EcSt:timeline:exportTUIK:2digit:all": {
+    "file": "repo/source/EcSt/timeline/exportTUIK/2digit/data.json"
+  }
+}

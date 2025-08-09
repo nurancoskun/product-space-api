@@ -36,7 +36,7 @@ const at = (o: any, p?: string) =>
 
 function filterByCity(payload: any, c: string, keys?: string[]) {
   const want = norm(c);
-  const K = keys && keys.length ? keys : ["il", "city", "cityname", "City", "CityName", "IL"];
+  const K = keys && keys.length ? keys : ["il", "city", "cityname", "City", "CityName", "IL", "cityname-tr"];
   const hit = (row: any) => {
     for (const k of K) {
       if (row && row[k] && norm(String(row[k])) === want) return true;
@@ -54,46 +54,54 @@ function filterByCity(payload: any, c: string, keys?: string[]) {
 
 export const handler: Handler = async (event) => {
   try {
+    // /datas/... sonrası segmentler
     const seg = event.path.replace(/^.*\/datas\//, "").split("/").filter(Boolean);
 
-    // Absolute fetch to avoid Node relative URL issues
-    // origin’i güvenli şekilde çıkar (Netlify’da en sağlam yöntem)
-const origin = (() => {
-  try { return new URL(event.rawUrl!).origin; } catch {}
-  const proto = (event.headers["x-forwarded-proto"] as string) || "https";
-  const host  = (event.headers["host"] as string) || "";
-  return host ? `${proto}://${host}` : "http://127.0.0.1:8888";
-})();
+    // ---- Güvenli origin + dosya okuma yardımcıları ----
+    const origin = (() => {
+      try {
+        return new URL(event.rawUrl!).origin;
+      } catch {}
+      const proto = (event.headers["x-forwarded-proto"] as string) || "https";
+      const host = (event.headers["host"] as string) || "";
+      return host ? `${proto}://${host}` : "http://127.0.0.1:8888";
+    })();
 
-const getText = async (fileRel: string) => {
-  const u = new URL(`/.netlify/functions/static?file=${encodeURIComponent(fileRel)}`, origin).toString();
-  const r = await fetch(u);
-  if (!r.ok) return null;
-  return await r.text();
-};
+    const getText = async (fileRel: string) => {
+      // static fonksiyonuna tam URL
+      const u = new URL(`/.netlify/functions/static?file=${encodeURIComponent(fileRel)}`, origin).toString();
+      const r = await fetch(u);
+      if (!r.ok) return null;
+      return await r.text();
+    };
 
-
-    // Passthrough mode
+    // ---------------- Passthrough (ham dosyayı döndür) ----------------
+    // /datas/source/<...>  -> public/repo/source/<...>.json
     if (seg[0] === "source") {
       const file = seg.slice(1).join("/") + ".json";
       const txt = await getText(`repo/source/${file}`);
-      if (!txt) return nf("source file not found");
+      if (!txt) return nf(`source file not found: repo/source/${file}`);
+
       const cp = cityParam(event);
       if (!cp || isAll(cp)) return ok(txt);
+
       try {
         const obj = JSON.parse(txt);
         const sliced = filterByCity(obj, cp);
         if (!sliced) return nf(`city not found: ${cp}`);
         return ok(JSON.stringify(sliced));
       } catch {
+        // JSON değilse olduğu gibi döndür
         return ok(txt);
       }
     }
 
-    // v1 API
+    // ---------------- v1 API ----------------
+    // /datas/v1/:section/:topic/:digit/:year/:viz
     if (seg[0] === "v1") {
       const [_, section, topic, digit, year, viz] = seg;
 
+      // İlgili section manifestini oku
       const maniTxt = await getText(`repo/${section}/manifest.json`);
       if (!maniTxt) return nf(`manifest not found for ${section}`);
       let mani: Manifest;
@@ -107,14 +115,15 @@ const getText = async (fileRel: string) => {
       const allCities = isAll(cp);
       const key = `${section}:${viz}:${topic}:${digit}:${year}`;
 
-      // YEAR = ALL logic
+      // --------------- YEAR = ALL ---------------
       if (norm(year) === "all") {
-        // First: check direct all file
+        // (1) Doğrudan :all karşılığı varsa önce onu kullan
         const directAllKey = `${section}:${viz}:${topic}:${digit}:all`;
         const directAllEntry = mani[directAllKey];
         if (directAllEntry?.file) {
           const txt = await getText(directAllEntry.file);
-          if (!txt) return nf("file not found (year=all)");
+          if (!txt) return nf(`file not found (year=all): ${directAllEntry.file}`);
+
           if (!cp || allCities) return ok(txt);
           try {
             const full = JSON.parse(txt);
@@ -128,7 +137,7 @@ const getText = async (fileRel: string) => {
           }
         }
 
-        // Aggregate years if direct all not found
+        // (2) Aksi halde yıl bazında topla
         const prefix = `${section}:${viz}:${topic}:${digit}:`;
         const entries = Object.entries(mani)
           .filter(([k]) => k.startsWith(prefix) && !k.endsWith(":all"))
@@ -145,19 +154,24 @@ const getText = async (fileRel: string) => {
             const full = JSON.parse(txt);
             let data = at(full, e.entry.root);
             if (data === undefined) data = full;
+
             if (cp && !allCities) {
               const sliced = filterByCity(data, cp, e.entry.cityKeys);
               if (!sliced) continue;
               data = sliced;
             }
             chunks.push({ year: e.year, data });
-          } catch {}
+          } catch {
+            // tek tek yıl dosyası bozuksa atla
+          }
         }
 
         if (!chunks.length) return nf("no data matched for year=all");
 
         const allArr = chunks.every((c) => Array.isArray(c.data));
-        const allObj = chunks.every((c) => c.data && typeof c.data === "object" && !Array.isArray(c.data));
+        const allObj = chunks.every(
+          (c) => c.data && typeof c.data === "object" && !Array.isArray(c.data)
+        );
 
         if (allArr) {
           const out: any[] = [];
@@ -180,15 +194,19 @@ const getText = async (fileRel: string) => {
           return ok(JSON.stringify(out));
         }
 
+        // karışık tiplerde basit liste
         return ok(JSON.stringify(chunks.map((c) => ({ year: c.year, value: c.data }))));
       }
 
-      // Single year
+      // --------------- Tek yıl ---------------
       const entry = mani[key];
       if (!entry?.file) return nf(`manifest miss: ${key}`);
+
       const txt = await getText(entry.file);
-      if (!txt) return nf("file not found");
+      if (!txt) return nf(`file not found: ${entry.file}`);
+
       if (!cp || allCities) return ok(txt);
+
       try {
         const full = JSON.parse(txt);
         let data = at(full, entry.root);
@@ -203,6 +221,6 @@ const getText = async (fileRel: string) => {
 
     return bad("unknown path. Try /datas/source/... or /datas/v1/:section/:topic/:digit/:year/:viz");
   } catch (e: any) {
-    return { statusCode: 500, body: String(e) };
+    return { statusCode: 500, body: String(e?.stack || e) };
   }
 };
