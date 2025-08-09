@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head><meta charset="UTF-8" /><title>Datas API Tester (City Filter)</title></head>
+<body>
+  <h3>Passthrough</h3>
+  <input id="raw" placeholder="source/... (no .json)" style="width:600px"/>
+  <input id="rawcity" placeholder="cityname=Ankara" />
+  <button onclick="goRaw()">Getir</button>
+  <h3>byMeta</h3>
+  <input id="status" placeholder="currentStatus | economicStructure"/>
+  <input id="topic" placeholder="export | employment | ..."/>
+  <input id="digit" placeholder="2digit | 4digit | 6digit"/>
+  <input id="year" placeholder="2024"/>
+  <input id="viz" placeholder="summary | pie | heatmap | time"/>
+  <input id="measure" placeholder="value | unit"/>
+  <input id="metacity" placeholder="cityname=Ankara"/>
+  <button onclick="goMeta()">Getir</button>
+  <pre id="out"></pre>
+<script>
+async function goRaw(){
+  const p = document.getElementById('raw').value.trim();
+  const city = document.getElementById('rawcity').value.trim();
+  const q = city ? ('?cityname=' + encodeURIComponent(city)) : '';
+  const res = await fetch('/datas/' + p + q);
+  const t = await res.text();
+  try{ out.textContent = JSON.stringify(JSON.parse(t), null, 2); }catch{ out.textContent = t; }
+}
+async function goMeta(){
+  const s = status.value.trim(); const t = topic.value.trim(); const d = digit.value.trim();
+  const y = year.value.trim(); const v = viz.value.trim(); const m = measure.value.trim();
+  const city = document.getElementById('metacity').value.trim();
+  const path = `/datas/byMeta/${s}/${t}/${d}/${y}/${v}` + (m?`/${m}`:"") + (city?`?cityname=${encodeURIComponent(city)}`:"");
+  const res = await fetch(path);
+  const txt = await res.text();
+  try{ out.textContent = JSON.stringify(JSON.parse(txt), null, 2); }catch{ out.textContent = txt; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,3404 @@
+[
+    {
+        "cityname-tr": "Adana",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.9,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.2,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.09,
+                "rca": 2.12,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.9,
+                "rca": 0.96,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Adıyaman",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.22,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.26,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.27,
+                "rca": 6.36,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.72,
+                "rca": 0.77,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Afyonkarahisar",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.19,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.15,
+                "rca": 8.75,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.04,
+                "rca": 0.93,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.81,
+                "rca": 0.87,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Ağrı",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.05,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.04,
+                "rca": 0.87,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.96,
+                "rca": 1.03,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Amasya",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.01,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.01,
+                "rca": 0.76,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.2,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.98,
+                "rca": 1.05,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Ankara",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.01,
+                "rca": 1.24,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.09,
+                "rca": 5.37,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.02,
+                "rca": 0.4,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.89,
+                "rca": 0.95,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Antalya",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.19,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.08,
+                "rca": 4.57,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.28,
+                "rca": 6.47,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.64,
+                "rca": 0.69,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Artvin",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.03,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.01,
+                "rca": 0.71,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.12,
+                "rca": 2.73,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.87,
+                "rca": 0.93,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Aydın",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.03,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.14,
+                "rca": 8.01,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.07,
+                "rca": 1.54,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.8,
+                "rca": 0.85,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Balıkesir",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.34,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.02,
+                "rca": 0.95,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.02,
+                "rca": 0.4,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.97,
+                "rca": 1.03,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Bilecik",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.11,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.04,
+                "rca": 2.5,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.0,
+                "rca": 0.04,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.96,
+                "rca": 1.02,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Bingöl",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.28,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.07,
+                "rca": 1.59,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.93,
+                "rca": 0.99,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Bitlis",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.07,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.01,
+                "rca": 0.73,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.31,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.97,
+                "rca": 1.04,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Bolu",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.01,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.07,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.11,
+                "rca": 2.54,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.89,
+                "rca": 0.95,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Burdur",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.05,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.43,
+                "rca": 25.26,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.24,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.56,
+                "rca": 0.6,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Bursa",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.19,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.25,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.02,
+                "rca": 0.47,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.97,
+                "rca": 1.04,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Çanakkale",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.03,
+                "rca": 6.3,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.21,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.05,
+                "rca": 1.1,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.92,
+                "rca": 0.99,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Çankırı",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.02,
+                "rca": 0.89,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.17,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.98,
+                "rca": 1.04,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Çorum",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.19,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.99,
+                "rca": 1.06,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Denizli",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.06,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.01,
+                "rca": 0.4,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.03,
+                "rca": 0.58,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.97,
+                "rca": 1.03,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Diyarbakır",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.02,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.38,
+                "rca": 22.07,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.03,
+                "rca": 0.59,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.6,
+                "rca": 0.64,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Edirne",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.01,
+                "rca": 1.19,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.01,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.12,
+                "rca": 2.77,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.88,
+                "rca": 0.94,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Elazığ",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.02,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.49,
+                "rca": 28.41,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.0,
+                "rca": 0.04,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.51,
+                "rca": 0.55,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Erzincan",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.02,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.22,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.2,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.99,
+                "rca": 1.06,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Erzurum",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.06,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.01,
+                "rca": 0.39,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.03,
+                "rca": 0.66,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.96,
+                "rca": 1.03,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Eskişehir",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 1.06,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.03,
+                "rca": 1.63,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.02,
+                "rca": 0.44,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.95,
+                "rca": 1.01,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Gaziantep",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.34,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.01,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.04,
+                "rca": 0.83,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.96,
+                "rca": 1.03,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Giresun",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.37,
+                "rca": 8.57,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.63,
+                "rca": 0.67,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Gümüşhane",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 1.0,
+                "rca": 58.39,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Hakkari",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.28,
+                "rca": 16.48,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.0,
+                "rca": 0.1,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.71,
+                "rca": 0.76,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Hatay",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.01,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.01,
+                "rca": 0.73,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.2,
+                "rca": 4.55,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.79,
+                "rca": 0.85,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Isparta",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.24,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.05,
+                "rca": 2.85,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.26,
+                "rca": 6.13,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.69,
+                "rca": 0.73,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Mersin",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.05,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.01,
+                "rca": 0.33,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.3,
+                "rca": 7.06,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.69,
+                "rca": 0.74,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "İstanbul",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.01,
+                "rca": 1.2,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.01,
+                "rca": 0.49,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.22,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.98,
+                "rca": 1.04,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "İzmir",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.01,
+                "rca": 1.68,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.01,
+                "rca": 0.64,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.08,
+                "rca": 1.84,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.9,
+                "rca": 0.97,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Kars",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.06,
+                "rca": 3.72,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.94,
+                "rca": 1.0,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Kastamonu",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.13,
+                "rca": 29.89,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.53,
+                "rca": 31.32,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.34,
+                "rca": 0.36,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Kayseri",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.23,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.02,
+                "rca": 1.41,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.0,
+                "rca": 0.09,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.97,
+                "rca": 1.04,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Kırklareli",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.01,
+                "rca": 1.81,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.1,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.07,
+                "rca": 1.66,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.92,
+                "rca": 0.98,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Kırşehir",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.11,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.13,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.16,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.99,
+                "rca": 1.06,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Kocaeli",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 1.11,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.19,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.0,
+                "rca": 0.04,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.99,
+                "rca": 1.06,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Konya",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.03,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.02,
+                "rca": 1.22,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.03,
+                "rca": 0.66,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.95,
+                "rca": 1.02,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Kütahya",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.19,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.03,
+                "rca": 1.76,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.0,
+                "rca": 0.04,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.97,
+                "rca": 1.03,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Malatya",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.01,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.01,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.08,
+                "rca": 1.97,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.92,
+                "rca": 0.98,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Manisa",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.01,
+                "rca": 2.9,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.19,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.03,
+                "rca": 0.64,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.96,
+                "rca": 1.02,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Kahramanmaraş",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.58,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.01,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.04,
+                "rca": 0.97,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.96,
+                "rca": 1.02,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Mardin",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.02,
+                "rca": 4.29,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.01,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.16,
+                "rca": 3.61,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.83,
+                "rca": 0.88,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Muğla",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.02,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.04,
+                "rca": 2.37,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.4,
+                "rca": 9.32,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.56,
+                "rca": 0.6,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Muş",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.01,
+                "rca": 0.73,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.63,
+                "rca": 14.68,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.36,
+                "rca": 0.38,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Nevşehir",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.04,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.03,
+                "rca": 0.68,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.97,
+                "rca": 1.04,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Niğde",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.06,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.24,
+                "rca": 14.31,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.15,
+                "rca": 3.47,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.61,
+                "rca": 0.65,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Ordu",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.12,
+                "rca": 7.19,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.26,
+                "rca": 5.94,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.62,
+                "rca": 0.66,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Rize",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.47,
+                "rca": 27.61,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.11,
+                "rca": 2.52,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.42,
+                "rca": 0.45,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Sakarya",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.08,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.02,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.16,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.99,
+                "rca": 1.06,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Samsun",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.31,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.07,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.1,
+                "rca": 2.36,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.9,
+                "rca": 0.96,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Siirt",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.01,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.06,
+                "rca": 1.48,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.94,
+                "rca": 1.0,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Sinop",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.01,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.17,
+                "rca": 4.0,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.83,
+                "rca": 0.88,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Sivas",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.04,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.09,
+                "rca": 5.16,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.32,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.9,
+                "rca": 0.96,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Tekirdağ",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.19,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.18,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.0,
+                "rca": 0.02,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 1.0,
+                "rca": 1.06,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Tokat",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.72,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.04,
+                "rca": 0.86,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.96,
+                "rca": 1.03,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Trabzon",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.01,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.05,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.61,
+                "rca": 14.28,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.39,
+                "rca": 0.41,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Tunceli",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 1.03,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.35,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.98,
+                "rca": 1.05,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Şanlıurfa",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.03,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.19,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.24,
+                "rca": 5.69,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.75,
+                "rca": 0.8,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Uşak",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.04,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.01,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.19,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.99,
+                "rca": 1.06,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Van",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.02,
+                "rca": 3.94,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.11,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.02,
+                "rca": 0.39,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.96,
+                "rca": 1.03,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Yozgat",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.08,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.02,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.03,
+                "rca": 0.77,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.97,
+                "rca": 1.03,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Zonguldak",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.01,
+                "rca": 1.84,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.09,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.25,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.98,
+                "rca": 1.05,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Aksaray",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.01,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.01,
+                "rca": 0.85,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.16,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.98,
+                "rca": 1.05,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Bayburt",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.02,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.18,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.99,
+                "rca": 1.06,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Karaman",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.13,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.11,
+                "rca": 2.49,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.89,
+                "rca": 0.95,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Kırıkkale",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 1.0,
+                "rca": 1.07,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Batman",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.04,
+                "rca": 1.01,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.96,
+                "rca": 1.02,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Şırnak",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.1,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.01,
+                "rca": 0.32,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.41,
+                "rca": 9.5,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.59,
+                "rca": 0.63,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Bartın",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.01,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.25,
+                "rca": 5.92,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.75,
+                "rca": 0.8,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Ardahan",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.18,
+                "rca": 10.43,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.82,
+                "rca": 0.88,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Iğdır",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.06,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.01,
+                "rca": 0.79,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.28,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.97,
+                "rca": 1.04,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Yalova",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.2,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.01,
+                "rca": 0.71,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.01,
+                "rca": 0.3,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.97,
+                "rca": 1.04,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Karabük",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.02,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.01,
+                "rca": 0.32,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.99,
+                "rca": 1.06,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Kilis",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.23,
+                "rca": 54.16,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.02,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.02,
+                "rca": 0.56,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.75,
+                "rca": 0.8,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Osmaniye",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.1,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.01,
+                "rca": 0.64,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.06,
+                "rca": 1.32,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.93,
+                "rca": 1.0,
+                "pci": -1.43
+            }
+        ]
+    },
+    {
+        "cityname-tr": "Düzce",
+        "year": "2024",
+        "data": [
+            {
+                "hs_product_code": "Hizmet",
+                "digitname-en": "Service",
+                "digitname-tr": "Hizmet",
+                "color": "#59A076",
+                "share": 0.0,
+                "rca": 0.21,
+                "pci": -0.2
+            },
+            {
+                "hs_product_code": "Madencilik",
+                "digitname-en": "Mining",
+                "digitname-tr": "Madencilik",
+                "color": "#EC8A5D",
+                "share": 0.0,
+                "rca": 0.0,
+                "pci": 0.29
+            },
+            {
+                "hs_product_code": "Tarım",
+                "digitname-en": "Agriculture",
+                "digitname-tr": "Tarım",
+                "color": "#F2CA6B",
+                "share": 0.11,
+                "rca": 2.61,
+                "pci": 1.35
+            },
+            {
+                "hs_product_code": "İmalat",
+                "digitname-en": "Manufacturing",
+                "digitname-tr": "İmalat",
+                "color": "#5A6FC0",
+                "share": 0.89,
+                "rca": 0.95,
+                "pci": -1.43
+            }
+        ]
+    }
+]
