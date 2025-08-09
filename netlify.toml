@@ -1,5 +1,6 @@
 [build]
   publish = "public"
+  command = "node ./scripts/build-manifests.mjs.js"
 
 [functions]
   directory = "netlify/functions"
@@ -8,4 +9,9 @@
 [[redirects]]
   from = "/datas/*"
   to   = "/.netlify/functions/datas/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/manifest/*"
+  to   = "/.netlify/functions/manifest/:splat"
   status = 200

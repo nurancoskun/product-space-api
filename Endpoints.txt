@@ -1,33 +1,33 @@
 section: CrSt
-topic: employment-all, workplace-all, production-all, export-unit, export-value
+topic: employment, workplace, production, export-unit, export-value
 digit: 4digit, 6digit
-year: 2020, 2021, 2022, 2023, 2024, all
+year: 2020, 2021, 2022, 2023, 2024
 viz:CrSt
 cityname-tr: Ankara,İstanbul, …, all
-Manifest anahtarı → CrSt:CrSt:<topic>:<digit>:<year>
+Manifest anahtarı → CrSt:CrSt:<topic>:<digit>:<year>:<city>
 
 section: EcSt
 viz:pie
 topic: employment, workplace, exportTUIK, importTUIK
 digit: main, sub, 2digit, 4digit
-year: 2020, 2021, 2022, 2023, 2024, all
+year: 2020, 2021, 2022, 2023, 2024
 cityname-tr: Ankara,İstanbul, …, all
-Manifest anahtarı → EcSt:pie:<topic>:<digit>:<year>
+Manifest anahtarı → EcSt:pie:<topic>:<digit>:<year>:<city>
 
 section: EcSt
 viz:timeline
 topic: employment, workplace, exportTUIK, importTUIK
 digit: main, sub, 2digit, 4digit
 cityname-tr: Ankara,İstanbul, …, all
-Manifest anahtarı → EcSt:timeline:<topic>:<digit>:all
+Manifest anahtarı → EcSt:timeline:<topic>:<digit>:<city>
 
 
 section: EcSt
 viz: heatmap
 topic: employment, workplace, exportTUIK, importTUIK
-year: 2020, 2021, 2022, 2023, 2024, all
+year: 2020, 2021, 2022, 2023, 2024
 cityname-tr: Ankara,İstanbul, …, all
-Manifest anahtarı → EcSt:heatmap:<topic>:<digit>:<year>
+Manifest anahtarı → EcSt:heatmap:<topic>:<year>:<city>
 
 section: StSp
 topic: employment, workplace, production, export-unit, export-value
@@ -35,16 +35,16 @@ digit: 4digit, 6digit
 year: 2020, 2021, 2022, 2023, 2024, all
 viz: StSp
 cityname-tr: Ankara,İstanbul, …, all
-Manifest anahtarı → StSp:StSp:<topic>:<digit>:<year>
+Manifest anahtarı → StSp:StSp:<topic>:<digit>:<year>:<city>
 
 
 section: PrSp
 viz: PrSpaceNACE, PrSpaceGTIP, PrSpaceGTIPWorld
-topic: 4digit, 6digit
+topic: nace, gtip, gtipatlas
 digit: 4digit, 6digit
 year: 2020, 2021, 2022, 2023, 2024, all
 cityname-tr: Ankara,İstanbul, …, all
-Manifest anahtarı → PrSp:<viz>:<topic>:<digit>:<year>
+Manifest anahtarı → PrSp:<viz>:<topic>:<digit>:<year>:<city>
 
 
 section: Latent
@@ -53,4 +53,4 @@ topic: employment, workplace, production, export-unit, export-value, gtip, nace
 digit: 4digit, 6digit
 year: 2020, 2021, 2022, 2023, 2024, all
 cityname-tr: Ankara,İstanbul, …, all
-Manifest anahtarı → Latent:<viz>:<topic>:<digit>:<year>
+Manifest anahtarı → Latent:<viz>:<topic>:<digit>:<year>:<city>

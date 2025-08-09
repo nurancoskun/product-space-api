@@ -1,5 +1,98 @@
 {
+  "CrSt:CrSt:employment:4digit:2020": {
+    "file": "repo/source/CrSt/employment/4digit/2020/data.json"
+  },
+  "CrSt:CrSt:employment:4digit:2021": {
+    "file": "repo/source/CrSt/employment/4digit/2021/data.json"
+  },
+  "CrSt:CrSt:employment:4digit:2022": {
+    "file": "repo/source/CrSt/employment/4digit/2022/data.json"
+  },
+  "CrSt:CrSt:employment:4digit:2023": {
+    "file": "repo/source/CrSt/employment/4digit/2023/data.json"
+  },
+  "CrSt:CrSt:employment:4digit:2024": {
+    "file": "repo/source/CrSt/employment/4digit/2024/data.json"
+  },
+  "CrSt:CrSt:employment:6digit:2020": {
+    "file": "repo/source/CrSt/employment/6digit/2020/data.json"
+  },
+  "CrSt:CrSt:employment:6digit:2021": {
+    "file": "repo/source/CrSt/employment/6digit/2021/data.json"
+  },
+  "CrSt:CrSt:employment:6digit:2022": {
+    "file": "repo/source/CrSt/employment/6digit/2022/data.json"
+  },
+  "CrSt:CrSt:employment:6digit:2023": {
+    "file": "repo/source/CrSt/employment/6digit/2023/data.json"
+  },
+  "CrSt:CrSt:employment:6digit:2024": {
+    "file": "repo/source/CrSt/employment/6digit/2024/data.json"
+  },
+  "CrSt:CrSt:export-unit:4digit:2022": {
+    "file": "repo/source/CrSt/export-unit/4digit/2022/data.json"
+  },
+  "CrSt:CrSt:export-unit:4digit:2023": {
+    "file": "repo/source/CrSt/export-unit/4digit/2023/data.json"
+  },
+  "CrSt:CrSt:export-unit:4digit:2024": {
+    "file": "repo/source/CrSt/export-unit/4digit/2024/data.json"
+  },
+  "CrSt:CrSt:export-unit:6digit:2022": {
+    "file": "repo/source/CrSt/export-unit/6digit/2022/data.json"
+  },
+  "CrSt:CrSt:export-unit:6digit:2023": {
+    "file": "repo/source/CrSt/export-unit/6digit/2023/data.json"
+  },
+  "CrSt:CrSt:export-unit:6digit:2024": {
+    "file": "repo/source/CrSt/export-unit/6digit/2024/data.json"
+  },
+  "CrSt:CrSt:export-value:4digit:2022": {
+    "file": "repo/source/CrSt/export-value/4digit/2022/data.json"
+  },
+  "CrSt:CrSt:export-value:4digit:2023": {
+    "file": "repo/source/CrSt/export-value/4digit/2023/data.json"
+  },
+  "CrSt:CrSt:export-value:4digit:2024": {
+    "file": "repo/source/CrSt/export-value/4digit/2024/data.json"
+  },
+  "CrSt:CrSt:export-value:6digit:2022": {
+    "file": "repo/source/CrSt/export-value/6digit/2022/data.json"
+  },
+  "CrSt:CrSt:export-value:6digit:2023": {
+    "file": "repo/source/CrSt/export-value/6digit/2023/data.json"
+  },
   "CrSt:CrSt:export-value:6digit:2024": {
     "file": "repo/source/CrSt/export-value/6digit/2024/data.json"
+  },
+  "CrSt:CrSt:workplace:4digit:2020": {
+    "file": "repo/source/CrSt/workplace/4digit/2020/data.json"
+  },
+  "CrSt:CrSt:workplace:4digit:2021": {
+    "file": "repo/source/CrSt/workplace/4digit/2021/data.json"
+  },
+  "CrSt:CrSt:workplace:4digit:2022": {
+    "file": "repo/source/CrSt/workplace/4digit/2022/data.json"
+  },
+  "CrSt:CrSt:workplace:4digit:2023": {
+    "file": "repo/source/CrSt/workplace/4digit/2023/data.json"
+  },
+  "CrSt:CrSt:workplace:4digit:2024": {
+    "file": "repo/source/CrSt/workplace/4digit/2024/data.json"
+  },
+  "CrSt:CrSt:workplace:6digit:2020": {
+    "file": "repo/source/CrSt/workplace/6digit/2020/data.json"
+  },
+  "CrSt:CrSt:workplace:6digit:2021": {
+    "file": "repo/source/CrSt/workplace/6digit/2021/data.json"
+  },
+  "CrSt:CrSt:workplace:6digit:2022": {
+    "file": "repo/source/CrSt/workplace/6digit/2022/data.json"
+  },
+  "CrSt:CrSt:workplace:6digit:2023": {
+    "file": "repo/source/CrSt/workplace/6digit/2023/data.json"
+  },
+  "CrSt:CrSt:workplace:6digit:2024": {
+    "file": "repo/source/CrSt/workplace/6digit/2024/data.json"
   }
 }

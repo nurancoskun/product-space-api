@@ -1,11 +1,350 @@
 {
-  "EcSt:heatmap:workplace:6digit:2023": {
-    "file": "repo/source/EcSt/heatmap/workplace/6digit/2023/data.json"
+  "EcSt:heatmap:employment:none:2020": {
+    "file": "repo/source/EcSt/heatmap/employment/2020/data.json"
+  },
+  "EcSt:heatmap:employment:none:2021": {
+    "file": "repo/source/EcSt/heatmap/employment/2021/data.json"
+  },
+  "EcSt:heatmap:employment:none:2022": {
+    "file": "repo/source/EcSt/heatmap/employment/2022/data.json"
+  },
+  "EcSt:heatmap:employment:none:2023": {
+    "file": "repo/source/EcSt/heatmap/employment/2023/data.json"
+  },
+  "EcSt:heatmap:employment:none:2024": {
+    "file": "repo/source/EcSt/heatmap/employment/2024/data.json"
+  },
+  "EcSt:heatmap:exportTUIK:none:2020": {
+    "file": "repo/source/EcSt/heatmap/exportTUIK/2020/data.json"
+  },
+  "EcSt:heatmap:exportTUIK:none:2021": {
+    "file": "repo/source/EcSt/heatmap/exportTUIK/2021/data.json"
+  },
+  "EcSt:heatmap:exportTUIK:none:2022": {
+    "file": "repo/source/EcSt/heatmap/exportTUIK/2022/data.json"
+  },
+  "EcSt:heatmap:exportTUIK:none:2023": {
+    "file": "repo/source/EcSt/heatmap/exportTUIK/2023/data.json"
+  },
+  "EcSt:heatmap:exportTUIK:none:2024": {
+    "file": "repo/source/EcSt/heatmap/exportTUIK/2024/data.json"
+  },
+  "EcSt:heatmap:importTUIK:none:2020": {
+    "file": "repo/source/EcSt/heatmap/importTUIK/2020/data.json"
+  },
+  "EcSt:heatmap:importTUIK:none:2021": {
+    "file": "repo/source/EcSt/heatmap/importTUIK/2021/data.json"
+  },
+  "EcSt:heatmap:importTUIK:none:2022": {
+    "file": "repo/source/EcSt/heatmap/importTUIK/2022/data.json"
+  },
+  "EcSt:heatmap:importTUIK:none:2023": {
+    "file": "repo/source/EcSt/heatmap/importTUIK/2023/data.json"
+  },
+  "EcSt:heatmap:importTUIK:none:2024": {
+    "file": "repo/source/EcSt/heatmap/importTUIK/2024/data.json"
+  },
+  "EcSt:heatmap:workplace:none:2020": {
+    "file": "repo/source/EcSt/heatmap/workplace/2020/data.json"
+  },
+  "EcSt:heatmap:workplace:none:2021": {
+    "file": "repo/source/EcSt/heatmap/workplace/2021/data.json"
+  },
+  "EcSt:heatmap:workplace:none:2022": {
+    "file": "repo/source/EcSt/heatmap/workplace/2022/data.json"
+  },
+  "EcSt:heatmap:workplace:none:2023": {
+    "file": "repo/source/EcSt/heatmap/workplace/2023/data.json"
+  },
+  "EcSt:heatmap:workplace:none:2024": {
+    "file": "repo/source/EcSt/heatmap/workplace/2024/data.json"
+  },
+  "EcSt:pie:employment:2digit:2020": {
+    "file": "repo/source/EcSt/pie/employment/2digit/2020/data.json"
+  },
+  "EcSt:pie:employment:2digit:2021": {
+    "file": "repo/source/EcSt/pie/employment/2digit/2021/data.json"
+  },
+  "EcSt:pie:employment:2digit:2022": {
+    "file": "repo/source/EcSt/pie/employment/2digit/2022/data.json"
+  },
+  "EcSt:pie:employment:2digit:2023": {
+    "file": "repo/source/EcSt/pie/employment/2digit/2023/data.json"
+  },
+  "EcSt:pie:employment:2digit:2024": {
+    "file": "repo/source/EcSt/pie/employment/2digit/2024/data.json"
+  },
+  "EcSt:pie:employment:4digit:2020": {
+    "file": "repo/source/EcSt/pie/employment/4digit/2020/data.json"
+  },
+  "EcSt:pie:employment:4digit:2021": {
+    "file": "repo/source/EcSt/pie/employment/4digit/2021/data.json"
   },
   "EcSt:pie:employment:4digit:2022": {
     "file": "repo/source/EcSt/pie/employment/4digit/2022/data.json"
   },
+  "EcSt:pie:employment:4digit:2023": {
+    "file": "repo/source/EcSt/pie/employment/4digit/2023/data.json"
+  },
+  "EcSt:pie:employment:4digit:2024": {
+    "file": "repo/source/EcSt/pie/employment/4digit/2024/data.json"
+  },
+  "EcSt:pie:employment:main:2020": {
+    "file": "repo/source/EcSt/pie/employment/main/2020/data.json"
+  },
+  "EcSt:pie:employment:main:2021": {
+    "file": "repo/source/EcSt/pie/employment/main/2021/data.json"
+  },
+  "EcSt:pie:employment:main:2022": {
+    "file": "repo/source/EcSt/pie/employment/main/2022/data.json"
+  },
+  "EcSt:pie:employment:main:2023": {
+    "file": "repo/source/EcSt/pie/employment/main/2023/data.json"
+  },
+  "EcSt:pie:employment:main:2024": {
+    "file": "repo/source/EcSt/pie/employment/main/2024/data.json"
+  },
+  "EcSt:pie:employment:sub:2020": {
+    "file": "repo/source/EcSt/pie/employment/sub/2020/data.json"
+  },
+  "EcSt:pie:employment:sub:2021": {
+    "file": "repo/source/EcSt/pie/employment/sub/2021/data.json"
+  },
+  "EcSt:pie:employment:sub:2022": {
+    "file": "repo/source/EcSt/pie/employment/sub/2022/data.json"
+  },
+  "EcSt:pie:employment:sub:2023": {
+    "file": "repo/source/EcSt/pie/employment/sub/2023/data.json"
+  },
+  "EcSt:pie:employment:sub:2024": {
+    "file": "repo/source/EcSt/pie/employment/sub/2024/data.json"
+  },
+  "EcSt:pie:exportTUIK:2digit:2020": {
+    "file": "repo/source/EcSt/pie/exportTUIK/2digit/2020/data.json"
+  },
+  "EcSt:pie:exportTUIK:2digit:2021": {
+    "file": "repo/source/EcSt/pie/exportTUIK/2digit/2021/data.json"
+  },
+  "EcSt:pie:exportTUIK:2digit:2022": {
+    "file": "repo/source/EcSt/pie/exportTUIK/2digit/2022/data.json"
+  },
+  "EcSt:pie:exportTUIK:2digit:2023": {
+    "file": "repo/source/EcSt/pie/exportTUIK/2digit/2023/data.json"
+  },
+  "EcSt:pie:exportTUIK:2digit:2024": {
+    "file": "repo/source/EcSt/pie/exportTUIK/2digit/2024/data.json"
+  },
+  "EcSt:pie:exportTUIK:4digit:2020": {
+    "file": "repo/source/EcSt/pie/exportTUIK/4digit/2020/data.json"
+  },
+  "EcSt:pie:exportTUIK:4digit:2021": {
+    "file": "repo/source/EcSt/pie/exportTUIK/4digit/2021/data.json"
+  },
+  "EcSt:pie:exportTUIK:4digit:2022": {
+    "file": "repo/source/EcSt/pie/exportTUIK/4digit/2022/data.json"
+  },
+  "EcSt:pie:exportTUIK:4digit:2023": {
+    "file": "repo/source/EcSt/pie/exportTUIK/4digit/2023/data.json"
+  },
+  "EcSt:pie:exportTUIK:4digit:2024": {
+    "file": "repo/source/EcSt/pie/exportTUIK/4digit/2024/data.json"
+  },
+  "EcSt:pie:exportTUIK:main:2020": {
+    "file": "repo/source/EcSt/pie/exportTUIK/main/2020/data.json"
+  },
+  "EcSt:pie:exportTUIK:main:2021": {
+    "file": "repo/source/EcSt/pie/exportTUIK/main/2021/data.json"
+  },
+  "EcSt:pie:exportTUIK:main:2022": {
+    "file": "repo/source/EcSt/pie/exportTUIK/main/2022/data.json"
+  },
+  "EcSt:pie:exportTUIK:main:2023": {
+    "file": "repo/source/EcSt/pie/exportTUIK/main/2023/data.json"
+  },
+  "EcSt:pie:exportTUIK:main:2024": {
+    "file": "repo/source/EcSt/pie/exportTUIK/main/2024/data.json"
+  },
+  "EcSt:pie:exportTUIK:sub:2020": {
+    "file": "repo/source/EcSt/pie/exportTUIK/sub/2020/data.json"
+  },
+  "EcSt:pie:exportTUIK:sub:2021": {
+    "file": "repo/source/EcSt/pie/exportTUIK/sub/2021/data.json"
+  },
+  "EcSt:pie:exportTUIK:sub:2022": {
+    "file": "repo/source/EcSt/pie/exportTUIK/sub/2022/data.json"
+  },
+  "EcSt:pie:exportTUIK:sub:2023": {
+    "file": "repo/source/EcSt/pie/exportTUIK/sub/2023/data.json"
+  },
+  "EcSt:pie:exportTUIK:sub:2024": {
+    "file": "repo/source/EcSt/pie/exportTUIK/sub/2024/data.json"
+  },
+  "EcSt:pie:importTUIK:2digit:2020": {
+    "file": "repo/source/EcSt/pie/importTUIK/2digit/2020/data.json"
+  },
+  "EcSt:pie:importTUIK:2digit:2021": {
+    "file": "repo/source/EcSt/pie/importTUIK/2digit/2021/data.json"
+  },
+  "EcSt:pie:importTUIK:2digit:2022": {
+    "file": "repo/source/EcSt/pie/importTUIK/2digit/2022/data.json"
+  },
+  "EcSt:pie:importTUIK:2digit:2023": {
+    "file": "repo/source/EcSt/pie/importTUIK/2digit/2023/data.json"
+  },
+  "EcSt:pie:importTUIK:2digit:2024": {
+    "file": "repo/source/EcSt/pie/importTUIK/2digit/2024/data.json"
+  },
+  "EcSt:pie:importTUIK:4digit:2020": {
+    "file": "repo/source/EcSt/pie/importTUIK/4digit/2020/data.json"
+  },
+  "EcSt:pie:importTUIK:4digit:2021": {
+    "file": "repo/source/EcSt/pie/importTUIK/4digit/2021/data.json"
+  },
+  "EcSt:pie:importTUIK:4digit:2022": {
+    "file": "repo/source/EcSt/pie/importTUIK/4digit/2022/data.json"
+  },
+  "EcSt:pie:importTUIK:4digit:2023": {
+    "file": "repo/source/EcSt/pie/importTUIK/4digit/2023/data.json"
+  },
+  "EcSt:pie:importTUIK:4digit:2024": {
+    "file": "repo/source/EcSt/pie/importTUIK/4digit/2024/data.json"
+  },
+  "EcSt:pie:importTUIK:main:2020": {
+    "file": "repo/source/EcSt/pie/importTUIK/main/2020/data.json"
+  },
+  "EcSt:pie:importTUIK:main:2021": {
+    "file": "repo/source/EcSt/pie/importTUIK/main/2021/data.json"
+  },
+  "EcSt:pie:importTUIK:main:2022": {
+    "file": "repo/source/EcSt/pie/importTUIK/main/2022/data.json"
+  },
+  "EcSt:pie:importTUIK:main:2023": {
+    "file": "repo/source/EcSt/pie/importTUIK/main/2023/data.json"
+  },
+  "EcSt:pie:importTUIK:main:2024": {
+    "file": "repo/source/EcSt/pie/importTUIK/main/2024/data.json"
+  },
+  "EcSt:pie:importTUIK:sub:2020": {
+    "file": "repo/source/EcSt/pie/importTUIK/sub/2020/data.json"
+  },
+  "EcSt:pie:importTUIK:sub:2021": {
+    "file": "repo/source/EcSt/pie/importTUIK/sub/2021/data.json"
+  },
+  "EcSt:pie:importTUIK:sub:2022": {
+    "file": "repo/source/EcSt/pie/importTUIK/sub/2022/data.json"
+  },
+  "EcSt:pie:importTUIK:sub:2023": {
+    "file": "repo/source/EcSt/pie/importTUIK/sub/2023/data.json"
+  },
+  "EcSt:pie:importTUIK:sub:2024": {
+    "file": "repo/source/EcSt/pie/importTUIK/sub/2024/data.json"
+  },
+  "EcSt:pie:workplace:2digit:2020": {
+    "file": "repo/source/EcSt/pie/workplace/2digit/2020/data.json"
+  },
+  "EcSt:pie:workplace:2digit:2021": {
+    "file": "repo/source/EcSt/pie/workplace/2digit/2021/data.json"
+  },
+  "EcSt:pie:workplace:2digit:2022": {
+    "file": "repo/source/EcSt/pie/workplace/2digit/2022/data.json"
+  },
+  "EcSt:pie:workplace:2digit:2023": {
+    "file": "repo/source/EcSt/pie/workplace/2digit/2023/data.json"
+  },
+  "EcSt:pie:workplace:2digit:2024": {
+    "file": "repo/source/EcSt/pie/workplace/2digit/2024/data.json"
+  },
+  "EcSt:pie:workplace:4digit:2020": {
+    "file": "repo/source/EcSt/pie/workplace/4digit/2020/data.json"
+  },
+  "EcSt:pie:workplace:4digit:2021": {
+    "file": "repo/source/EcSt/pie/workplace/4digit/2021/data.json"
+  },
+  "EcSt:pie:workplace:4digit:2022": {
+    "file": "repo/source/EcSt/pie/workplace/4digit/2022/data.json"
+  },
+  "EcSt:pie:workplace:4digit:2023": {
+    "file": "repo/source/EcSt/pie/workplace/4digit/2023/data.json"
+  },
+  "EcSt:pie:workplace:4digit:2024": {
+    "file": "repo/source/EcSt/pie/workplace/4digit/2024/data.json"
+  },
+  "EcSt:pie:workplace:main:2020": {
+    "file": "repo/source/EcSt/pie/workplace/main/2020/data.json"
+  },
+  "EcSt:pie:workplace:main:2021": {
+    "file": "repo/source/EcSt/pie/workplace/main/2021/data.json"
+  },
+  "EcSt:pie:workplace:main:2022": {
+    "file": "repo/source/EcSt/pie/workplace/main/2022/data.json"
+  },
+  "EcSt:pie:workplace:main:2023": {
+    "file": "repo/source/EcSt/pie/workplace/main/2023/data.json"
+  },
+  "EcSt:pie:workplace:main:2024": {
+    "file": "repo/source/EcSt/pie/workplace/main/2024/data.json"
+  },
+  "EcSt:pie:workplace:sub:2020": {
+    "file": "repo/source/EcSt/pie/workplace/sub/2020/data.json"
+  },
+  "EcSt:pie:workplace:sub:2021": {
+    "file": "repo/source/EcSt/pie/workplace/sub/2021/data.json"
+  },
+  "EcSt:pie:workplace:sub:2022": {
+    "file": "repo/source/EcSt/pie/workplace/sub/2022/data.json"
+  },
+  "EcSt:pie:workplace:sub:2023": {
+    "file": "repo/source/EcSt/pie/workplace/sub/2023/data.json"
+  },
+  "EcSt:pie:workplace:sub:2024": {
+    "file": "repo/source/EcSt/pie/workplace/sub/2024/data.json"
+  },
+  "EcSt:timeline:employment:2digit:all": {
+    "file": "repo/source/EcSt/timeline/employment/2digit/data.json"
+  },
+  "EcSt:timeline:employment:4digit:all": {
+    "file": "repo/source/EcSt/timeline/employment/4digit/data.json"
+  },
+  "EcSt:timeline:employment:main:all": {
+    "file": "repo/source/EcSt/timeline/employment/main/data.json"
+  },
+  "EcSt:timeline:employment:sub:all": {
+    "file": "repo/source/EcSt/timeline/employment/sub/data.json"
+  },
   "EcSt:timeline:exportTUIK:2digit:all": {
     "file": "repo/source/EcSt/timeline/exportTUIK/2digit/data.json"
+  },
+  "EcSt:timeline:exportTUIK:4digit:all": {
+    "file": "repo/source/EcSt/timeline/exportTUIK/4digit/data.json"
+  },
+  "EcSt:timeline:exportTUIK:main:all": {
+    "file": "repo/source/EcSt/timeline/exportTUIK/main/data.json"
+  },
+  "EcSt:timeline:exportTUIK:sub:all": {
+    "file": "repo/source/EcSt/timeline/exportTUIK/sub/data.json"
+  },
+  "EcSt:timeline:importTUIK:2digit:all": {
+    "file": "repo/source/EcSt/timeline/importTUIK/2digit/data.json"
+  },
+  "EcSt:timeline:importTUIK:4digit:all": {
+    "file": "repo/source/EcSt/timeline/importTUIK/4digit/data.json"
+  },
+  "EcSt:timeline:importTUIK:main:all": {
+    "file": "repo/source/EcSt/timeline/importTUIK/main/data.json"
+  },
+  "EcSt:timeline:importTUIK:sub:all": {
+    "file": "repo/source/EcSt/timeline/importTUIK/sub/data.json"
+  },
+  "EcSt:timeline:workplace:2digit:all": {
+    "file": "repo/source/EcSt/timeline/workplace/2digit/data.json"
+  },
+  "EcSt:timeline:workplace:4digit:all": {
+    "file": "repo/source/EcSt/timeline/workplace/4digit/data.json"
+  },
+  "EcSt:timeline:workplace:main:all": {
+    "file": "repo/source/EcSt/timeline/workplace/main/data.json"
+  },
+  "EcSt:timeline:workplace:sub:all": {
+    "file": "repo/source/EcSt/timeline/workplace/sub/data.json"
   }
 }

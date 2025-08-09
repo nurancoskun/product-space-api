@@ -1,226 +1,115 @@
-import type { Handler } from "@netlify/functions";
+// netlify/functions/datas.ts
+import type { Handler } from '@netlify/functions';
+import fs from 'fs';
+import path from 'path';
 
-type ManifestEntry = { file: string; root?: string; cityKeys?: string[] };
-type Manifest = Record<string, ManifestEntry>;
+type Section = 'CrSt'|'EcSt'|'StSp'|'PrSp'|'Latent';
 
-const ok = (b: string, t = "application/json") => ({
-  statusCode: 200,
-  headers: { "Content-Type": t, "Cache-Control": "public, max-age=600" },
-  body: b,
-});
-const nf = (m: string) => ({ statusCode: 404, body: m });
-const bad = (m: string) => ({ statusCode: 400, body: m });
-
-const norm = (s: string) =>
-  s
-    .toLowerCase()
-    .replace(/ı/g, "i")
-    .replace(/İ/g, "i")
-    .replace(/ş/g, "s")
-    .replace(/ğ/g, "g")
-    .replace(/ü/g, "u")
-    .replace(/ö/g, "o")
-    .replace(/ç/g, "c")
-    .trim();
-
-const cityParam = (e: any) => {
-  const p = e.queryStringParameters || {};
-  const v = p.cityname || p.city || p.il;
-  return typeof v === "string" ? v.trim() : "";
+const SECTION_MANIFEST: Record<Section, string> = {
+  CrSt:  path.join(process.cwd(), 'public', 'repo', 'CrSt', 'manifest.json'),
+  EcSt:  path.join(process.cwd(), 'public', 'repo', 'EcSt', 'manifest.json'),
+  StSp:  path.join(process.cwd(), 'public', 'repo', 'StSp', 'manifest.json'),
+  PrSp:  path.join(process.cwd(), 'public', 'repo', 'PrSp', 'manifest.json'),
+  Latent:path.join(process.cwd(), 'public', 'repo', 'Latent', 'manifest.json'),
 };
 
-const isAll = (v?: string) => !!v && norm(v) === "all";
+const ok = (b: string, t='application/json') => ({
+  statusCode: 200,
+  headers: { 'Content-Type': t, 'Cache-Control': 'public, max-age=300' },
+  body: b,
+});
+const nf = (m: string) => ({ statusCode: 404, body: JSON.stringify({ error: m }) });
+const bad = (m: string) => ({ statusCode: 400, body: JSON.stringify({ error: m }) });
 
-const at = (o: any, p?: string) =>
-  !p ? o : p.split(".").reduce((a: any, k: string) => (a && typeof a === "object" ? a[k] : undefined), o);
+function readJson(p: string){
+  if (!fs.existsSync(p)) throw Object.assign(new Error('file not found'), { code: 'ENOENT', path: p });
+  const raw = fs.readFileSync(p, 'utf8');
+  return JSON.parse(raw);
+}
 
-function filterByCity(payload: any, c: string, keys?: string[]) {
-  const want = norm(c);
-  const K = keys && keys.length ? keys : ["il", "city", "cityname", "City", "CityName", "IL", "cityname-tr"];
-  const hit = (row: any) => {
-    for (const k of K) {
-      if (row && row[k] && norm(String(row[k])) === want) return true;
+// city filtresi
+function filterByCity(data: any, city?: string) {
+  if (!city || city.toLowerCase() === 'all') return data;
+  const key = 'cityname-tr';
+  if (Array.isArray(data)) return data.filter((r) => r && String(r[key]) === city);
+  if (data && typeof data === 'object') {
+    const o: any = Array.isArray(data) ? [] : { ...data };
+    for (const k of Object.keys(o)) {
+      if (Array.isArray(o[k])) o[k] = o[k].filter((r: any) => r && String(r[key]) === city);
     }
-    return false;
-  };
-  if (Array.isArray(payload)) return payload.filter(hit);
-  if (payload && typeof payload === "object") {
-    if (hit(payload)) return payload;
-    const key = Object.keys(payload).find((k) => norm(k) === want);
-    if (key) return (payload as any)[key];
+    return o;
   }
-  return null;
+  return data;
+}
+
+// base key normalizasyonu
+function normalizeKeyBase(section: Section, viz: string, topic: string, digit: string, year: string) {
+  if (section === 'EcSt' && viz === 'heatmap') {
+    return `${section}:${viz}:${topic}:none:${year}`;
+  }
+  if (section === 'EcSt' && viz === 'timeline') {
+    return `${section}:${viz}:${topic}:${digit}:all`;
+  }
+  return `${section}:${viz}:${topic}:${digit}:${year}`;
+}
+
+function resolveManifestRecord(section: Section, baseKey: string) {
+  const manPath = SECTION_MANIFEST[section];
+  const idx = readJson(manPath);
+  const rec = idx[baseKey];
+  if (!rec) return null;
+  return { file: path.join(process.cwd(), 'public', rec.file) };
+}
+
+function parseV1Path(p: string){
+  // /datas/v1/:section/:topic/:digit/:year/:viz
+  const parts = p.split('/').filter(Boolean);
+  const v1 = parts.indexOf('v1');
+  if (v1 === -1 || parts.length < v1 + 6) return null;
+  const section = parts[v1+1] as Section;
+  const topic = parts[v1+2];
+  const digit = parts[v1+3];
+  const year  = parts[v1+4];
+  const viz   = parts[v1+5];
+  return { section, topic, digit, year, viz };
+}
+
+function parseSourcePath(p: string){
+  // /datas/source/<...> (.json uzantısı opsiyonel)
+  const parts = p.split('/').filter(Boolean);
+  const src = parts.indexOf('source');
+  if (src === -1) return null;
+  const rest = parts.slice(src+1).join('/');
+  return rest.endsWith('.json') ? rest : (rest + '.json');
 }
 
 export const handler: Handler = async (event) => {
   try {
-    // /datas/... sonrası segmentler
-    const seg = event.path.replace(/^.*\/datas\//, "").split("/").filter(Boolean);
+    const urlPath = (event.path || '').replace(/^\/datas\/?/, '');
+    const city = (event.queryStringParameters?.cityname || event.queryStringParameters?.city || '').trim();
 
-    // ---- Güvenli origin + dosya okuma yardımcıları ----
-    const origin = (() => {
-      try {
-        return new URL(event.rawUrl!).origin;
-      } catch {}
-      const proto = (event.headers["x-forwarded-proto"] as string) || "https";
-      const host = (event.headers["host"] as string) || "";
-      return host ? `${proto}://${host}` : "http://127.0.0.1:8888";
-    })();
-
-    const getText = async (fileRel: string) => {
-      // static fonksiyonuna tam URL
-      const u = new URL(`/.netlify/functions/static?file=${encodeURIComponent(fileRel)}`, origin).toString();
-      const r = await fetch(u);
-      if (!r.ok) return null;
-      return await r.text();
-    };
-
-    // ---------------- Passthrough (ham dosyayı döndür) ----------------
-    // /datas/source/<...>  -> public/repo/source/<...>.json
-    if (seg[0] === "source") {
-      const file = seg.slice(1).join("/") + ".json";
-      const txt = await getText(`repo/source/${file}`);
-      if (!txt) return nf(`source file not found: repo/source/${file}`);
-
-      const cp = cityParam(event);
-      if (!cp || isAll(cp)) return ok(txt);
-
-      try {
-        const obj = JSON.parse(txt);
-        const sliced = filterByCity(obj, cp);
-        if (!sliced) return nf(`city not found: ${cp}`);
-        return ok(JSON.stringify(sliced));
-      } catch {
-        // JSON değilse olduğu gibi döndür
-        return ok(txt);
-      }
+    // 1) raw passthrough
+    const srcRel = parseSourcePath(urlPath);
+    if (srcRel) {
+      const fpath = path.join(process.cwd(), 'public', srcRel);
+      const data = readJson(fpath);
+      const filtered = filterByCity(data, city || undefined);
+      return ok(JSON.stringify(filtered));
     }
 
-    // ---------------- v1 API ----------------
-    // /datas/v1/:section/:topic/:digit/:year/:viz
-    if (seg[0] === "v1") {
-      const [_, section, topic, digit, year, viz] = seg;
+    // 2) v1 router
+    const v1 = parseV1Path(urlPath);
+    if (!v1) return bad('Unsupported path. Use /datas/source/... or /datas/v1/:section/:topic/:digit/:year/:viz');
 
-      // İlgili section manifestini oku
-      const maniTxt = await getText(`repo/${section}/manifest.json`);
-      if (!maniTxt) return nf(`manifest not found for ${section}`);
-      let mani: Manifest;
-      try {
-        mani = JSON.parse(maniTxt) as Manifest;
-      } catch {
-        return bad("invalid manifest");
-      }
+    const { section, topic, digit, year, viz } = v1;
+    const baseKey = normalizeKeyBase(section, viz, topic, digit, year);
+    const rec = resolveManifestRecord(section, baseKey);
+    if (!rec) return nf(`manifest key not found: ${baseKey}`);
 
-      const cp = cityParam(event);
-      const allCities = isAll(cp);
-      const key = `${section}:${viz}:${topic}:${digit}:${year}`;
-
-      // --------------- YEAR = ALL ---------------
-      if (norm(year) === "all") {
-        // (1) Doğrudan :all karşılığı varsa önce onu kullan
-        const directAllKey = `${section}:${viz}:${topic}:${digit}:all`;
-        const directAllEntry = mani[directAllKey];
-        if (directAllEntry?.file) {
-          const txt = await getText(directAllEntry.file);
-          if (!txt) return nf(`file not found (year=all): ${directAllEntry.file}`);
-
-          if (!cp || allCities) return ok(txt);
-          try {
-            const full = JSON.parse(txt);
-            let data = at(full, directAllEntry.root);
-            if (data === undefined) data = full;
-            const sliced = filterByCity(data, cp, directAllEntry.cityKeys);
-            if (!sliced) return nf(`city not found: ${cp}`);
-            return ok(JSON.stringify(sliced));
-          } catch {
-            return ok(txt);
-          }
-        }
-
-        // (2) Aksi halde yıl bazında topla
-        const prefix = `${section}:${viz}:${topic}:${digit}:`;
-        const entries = Object.entries(mani)
-          .filter(([k]) => k.startsWith(prefix) && !k.endsWith(":all"))
-          .map(([k, v]) => ({ year: k.slice(prefix.length), entry: v as ManifestEntry }))
-          .sort((a, b) => (parseInt(a.year) || 0) - (parseInt(b.year) || 0));
-
-        if (!entries.length) return nf("no years matched in manifest");
-
-        const chunks: Array<{ year: string; data: any }> = [];
-        for (const e of entries) {
-          const txt = await getText(e.entry.file);
-          if (!txt) continue;
-          try {
-            const full = JSON.parse(txt);
-            let data = at(full, e.entry.root);
-            if (data === undefined) data = full;
-
-            if (cp && !allCities) {
-              const sliced = filterByCity(data, cp, e.entry.cityKeys);
-              if (!sliced) continue;
-              data = sliced;
-            }
-            chunks.push({ year: e.year, data });
-          } catch {
-            // tek tek yıl dosyası bozuksa atla
-          }
-        }
-
-        if (!chunks.length) return nf("no data matched for year=all");
-
-        const allArr = chunks.every((c) => Array.isArray(c.data));
-        const allObj = chunks.every(
-          (c) => c.data && typeof c.data === "object" && !Array.isArray(c.data)
-        );
-
-        if (allArr) {
-          const out: any[] = [];
-          for (const c of chunks) {
-            for (const r of c.data as any[]) {
-              out.push(r && typeof r === "object" && !("year" in r) ? { ...r, year: c.year } : r);
-            }
-          }
-          return ok(JSON.stringify(out));
-        }
-
-        if (allObj) {
-          const out: Record<string, any> = {};
-          for (const c of chunks) {
-            for (const k of Object.keys(c.data)) {
-              if (!out[k]) out[k] = c.data[k];
-              else out[`${k}_${c.year}`] = c.data[k];
-            }
-          }
-          return ok(JSON.stringify(out));
-        }
-
-        // karışık tiplerde basit liste
-        return ok(JSON.stringify(chunks.map((c) => ({ year: c.year, value: c.data }))));
-      }
-
-      // --------------- Tek yıl ---------------
-      const entry = mani[key];
-      if (!entry?.file) return nf(`manifest miss: ${key}`);
-
-      const txt = await getText(entry.file);
-      if (!txt) return nf(`file not found: ${entry.file}`);
-
-      if (!cp || allCities) return ok(txt);
-
-      try {
-        const full = JSON.parse(txt);
-        let data = at(full, entry.root);
-        if (data === undefined) data = full;
-        const sliced = filterByCity(data, cp, entry.cityKeys);
-        if (!sliced) return nf(`city not found: ${cp}`);
-        return ok(JSON.stringify(sliced));
-      } catch {
-        return ok(txt);
-      }
-    }
-
-    return bad("unknown path. Try /datas/source/... or /datas/v1/:section/:topic/:digit/:year/:viz");
-  } catch (e: any) {
-    return { statusCode: 500, body: String(e?.stack || e) };
+    const data = readJson(rec.file);
+    const filtered = filterByCity(data, city || undefined);
+    return ok(JSON.stringify(filtered));
+  } catch (e:any) {
+    return { statusCode: 500, body: JSON.stringify({ error: e.message, stack: e.stack }) };
   }
 };
