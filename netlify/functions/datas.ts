@@ -57,14 +57,21 @@ export const handler: Handler = async (event) => {
     const seg = event.path.replace(/^.*\/datas\//, "").split("/").filter(Boolean);
 
     // Absolute fetch to avoid Node relative URL issues
-    const proto = (event.headers["x-forwarded-proto"] as string) || "https";
-    const host = event.headers["host"] as string;
-    const base = `${proto}://${host}`;
-    const getText = async (fileRel: string) => {
-      const r = await fetch(`${base}/.netlify/functions/static?file=${encodeURIComponent(fileRel)}`);
-      if (!r.ok) return null;
-      return await r.text();
-    };
+    // origin’i güvenli şekilde çıkar (Netlify’da en sağlam yöntem)
+const origin = (() => {
+  try { return new URL(event.rawUrl!).origin; } catch { /* no-op */ }
+  const proto = (event.headers["x-forwarded-proto"] as string) || "https";
+  const host  = (event.headers["host"] as string) || "";
+  return host ? `${proto}://${host}` : "http://127.0.0.1:8888"; // local fallback
+})();
+
+const getText = async (fileRel: string) => {
+  const u = new URL(`/.netlify/functions/static?file=${encodeURIComponent(fileRel)}`, origin).toString();
+  const r = await fetch(u);
+  if (!r.ok) return null;
+  return await r.text();
+};
+
 
     // Passthrough mode
     if (seg[0] === "source") {

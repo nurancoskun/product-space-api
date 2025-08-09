@@ -7,5 +7,5 @@
 
 [[redirects]]
   from = "/datas/*"
-  to = "/.netlify/functions/datas"
+  to = "/.netlify/functions/:splat"
   status = 200
